@@ -27,7 +27,7 @@ git clone https://github.com/SEU-USUARIO/avaScript-Orientado-a-Objetos.git
    Entre no diretório do projeto clonado:
 
 ```bash
-cd avaScript-Orientado-a-Objetos
+cd JavaScript-Orientado-a-Objetos
 ```
 
 ### 4. Instalar Dependências
