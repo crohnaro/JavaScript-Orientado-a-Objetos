@@ -61,6 +61,11 @@ git push origin main
 - Clique no botão "Pull Request" para enviar suas mudanças para o repositório original.
 - Preencha os detalhes do pull request e envie.
 
+### LINKS ÚTEIS: 
+
+https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/Basics#teste_suas_habilidades_
+https://developer.mozilla.org/pt-BR/docs/conflicting/Learn/JavaScript/Objects/Classes_in_JavaScript
+
 ### Suporte
 Se você tiver alguma duvida, boa sorte pesquisando por ela, rs.
 Brincadeira, na proxima aula presencial eu tiro as duvidas.
