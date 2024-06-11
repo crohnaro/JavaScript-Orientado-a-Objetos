@@ -2,29 +2,35 @@
 
 class Livro {
   constructor(titulo, autor) {
-    
+    this.titulo = titulo;
+    this.autor = autor;
+    this.disponivel = true; // Inicia como disponível
   }
 
   emprestar() {
-    
+    if (this.disponivel) {
+      this.disponivel = false; // Marca como emprestado
+      return true;
+    }
+    return false;
   }
 
   devolver() {
-    
+    this.disponivel = true; // Marca como disponível novamente
   }
 }
 
 class Biblioteca {
   constructor() {
-    
+    this.livros = []; // Armazena os livros da biblioteca
   }
 
   adicionarLivro(livro) {
-   
+    this.livros.push(livro);
   }
 
   listarLivros() {
-  
+    return this.livros;
   }
 }
 
