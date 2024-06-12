@@ -2,30 +2,38 @@
 
 class Livro {
   constructor(titulo, autor) {
-    
+  this.titulo = titulo;
+  this.autor = autor;
+  this.disponivel = true;
   }
-
+  
   emprestar() {
-    
+  if (this.disponivel) {
+  this.disponivel = false;
+  return true;
   }
-
-  devolver() {
-    
-  }
-}
-
-class Biblioteca {
-  constructor() {
-    
-  }
-
-  adicionarLivro(livro) {
-   
-  }
-
-  listarLivros() {
+  return false;
   
   }
-}
-
-module.exports = { Livro, Biblioteca };
+  
+  devolver() {
+  this.disponivel = true;
+  }
+  
+  }
+  
+  class Biblioteca {
+  constructor() {
+  this.Livros = [];
+  }
+  
+  adicionarLivro(livro) {
+  this.Livros.push(livro);
+  }
+  
+  listarLivros() {
+  return this.Livros;
+  }
+  }
+  
+  module.exports = { Livro, Biblioteca };
