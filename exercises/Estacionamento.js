@@ -2,25 +2,32 @@
 
 class Carro {
   constructor(placa, modelo) {
-    
+    this.placa = placa;
+    this.modelo = modelo;
   }
 }
 
 class Estacionamento {
   constructor() {
-    
+    this.vagas = [];
   }
 
   estacionarCarro(carro) {
-    
+   this.vagas.push(carro);
   }
 
   removerCarro(placa) {
-    
+    const index = this.vagas.findIndex(carro => carro.placa === placa)
+    if (index !== -1) {
+      this.vagas.splice(index,1);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   listarCarros() {
-    
+    return this.vagas
   }
 }
 
